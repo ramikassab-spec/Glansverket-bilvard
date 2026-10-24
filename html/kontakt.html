@@ -30,10 +30,10 @@
     </header>
 
     <main>
-        <section class="contract intro">
+        <section class="contact-intro">
             <h1>Kontakta oss</h1>
             <p>
-                har du frågor om våra behandlingar?
+                Har du frågor om våra behandlingar?
                 Skicka en förfrågan så hjälper vi dig.
             </p>
         </section>
@@ -51,9 +51,85 @@
                 <p>Lördag: 10.00-14.00</p>
                 <p>Söndag: Stängt</p>
             </div>
+
+            <div class="contact-form-container">
+                <h2>Skicka en förfrågan</h2>
+
+                <form id="contact-form" novalidate>
+                    <div class="form-field">
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name">
+                        <p id="name-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">E-post</label>
+                        <input type="email" id="email" name="email">
+                        <p id="email-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="service">Vilken behandling gäller det?</label>
+
+                        <select id="service" name="service">
+                            <option value="">Välj behandling</option>
+                            <option value="handtvätt">Handtvätt</option>
+                            <option value="invandig">Invändig rengöring</option>
+                            <option value="polering">Polering och lackskydd</option>
+                        </select>
+                        <p id="service-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Meddelande</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                        <p id="message-error"></p>
+                    </div>
+
+                    <button class="button" type="submit">
+                        Skicka förfrågan
+                    </button>
+                    <p id="form-feedback" aria-live="polite"></p>
+
+                </form>
+            </div>
         </section>
 
 
     </main>
+
+    <footer class="site-footer">
+    <div class="footer-info">
+        <h2>GLANSVERKET BILVÅRD</h2>
+        <P>Professionell bilvård med fokus på kvalitet och noggrannhet.</P>
+    </div>
+
+    <div class="footer-contact">
+        <h3>Kontakt</h3>
+        <p>Telefon: 070-000 00 00</p>
+        <p>E-post: kontakt@glansverket.example</p>
+        <p>Helsingborg, Skåne</p>
+    </div>
+
+    <div class="footer-hours">
+        <h3>Öppettider</h3>
+        <p>Måndag-fredag: 08.00-17.00</p>
+        <p>Lördag: 10.00-14.00</p>
+        <p>Söndag: Stängt</p>
+    </div>
+
+    <div class="footer-links">
+        <h3>Snabblänkar</h3>
+        <a href="index.html">Startsida</a>
+        <a href="tjanster.html">Tjänster</a>
+        <a href="om-oss.html">Om oss</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <p class="copyright">
+        &copy; 2026 Glansverket Bilvård
+    </p>
+
+</footer>
+
 </body>
 </html>
