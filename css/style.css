@@ -52,6 +52,11 @@ body {
     color: var(--color-light);
     font-size: 1.5rem;
     cursor: pointer;
+}
 
-
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 5%;
 }
