@@ -1,0 +1,29 @@
+:root {
+    --color-dark: #17191B;
+    --color-light: #F2F0EB;
+    --color-gold: #C8A66A;
+    --color-beige: #E6DDCC;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+
+
+}
