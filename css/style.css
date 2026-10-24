@@ -60,3 +60,34 @@ body {
     gap: 40px;
     padding: 60px 5%;
 }
+
+.hero img{
+    width: 50%;
+    border-radius: auto;
+}
+
+.hero-cpntent{
+    flex: 1;
+}
+
+.hero h1{
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 450px;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-dark);
+    padding: 14px 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
