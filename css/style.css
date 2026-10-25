@@ -216,7 +216,7 @@ body {
     font-size: 0.8rem;
 }
 
-.services.intro{
+.services-intro{
     padding: 60px 5%;
     text-align: center;
 }
@@ -241,6 +241,8 @@ body {
 }
 
 .service-detail {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-beige);
 }
 
@@ -252,7 +254,11 @@ body {
 }
 
 .service-detail-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 20px;
+
 }
 
 .service-price {
@@ -266,9 +272,85 @@ body {
     margin-bottom: 12px;
 }
 
+.service-detail-content .button{
+    display: block;
+    width: fit-content;
+    margin: auto auto 0;
+}
+
 .button:hover {
     background-color: var(--color-dark);
     color: var(--color-light);
+}
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 5%;
+}
+
+.about-image {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.about-values {
+    padding: 60px 5%;
+}
+
+.about-values h2 {
+    margin-bottom: 32px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.value-card {
+    background-color: var(--color-beige);
+    padding: 24px;
+}
+
+.value-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.about-cta {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.about-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.about-cta p {
+    line-height: 1.5;
+    margin-bottom: 24px;
 }
 
 @media (max-width: 768px) {
@@ -304,4 +386,26 @@ body {
 .site-nav{
     display: none;
 }
+
+.about-intro {
+    flex-direction: column;
+    padding: 40px 5%;
 }
+
+.about-image {
+    width: 100%;
+}
+
+.about-content {
+    width: 100%;
+}
+
+.about-content h1 {
+    font-size: 2rem;
+}
+
+.values-grid {
+    grid-template-columns: 1fr;
+}
+}
+
