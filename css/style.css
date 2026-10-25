@@ -81,7 +81,7 @@ body {
     line-height: 1.5;
     margin-bottom: 24px;
     max-width: 450px;
-    
+
 } .button {
     display: inline-block;
     background-color: var(--color-gold);
@@ -187,4 +187,31 @@ body {
     font-size: 1rem;
     line height: 1.5;
     margin-bottom: 24px;
+}
+
+.site-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 48px 5%;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.footer-links a {
+    display: block;
+    color: var(--color-light);
+    text-decoration: none;
+    margin-bottom: 6px;      
+}
+
+.footer-links a:hover {
+    color: var(--color-gold);
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.8rem;
 }
