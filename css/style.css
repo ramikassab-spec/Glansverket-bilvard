@@ -81,9 +81,8 @@ body {
     line-height: 1.5;
     margin-bottom: 24px;
     max-width: 450px;
-}
-
-.hero .button {
+    
+} .button {
     display: inline-block;
     background-color: var(--color-gold);
     color: var(--color-dark);
@@ -172,4 +171,20 @@ body {
     object-fit: contain;
     margin-bottom: 8px;
     border-radius: 8px;
+}
+
+.booking{
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.booking p{
+    font-size: 1rem;
+    line height: 1.5;
+    margin-bottom: 24px;
 }
