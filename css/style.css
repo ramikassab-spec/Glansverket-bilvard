@@ -61,12 +61,12 @@ body {
     padding: 60px 5%;
 }
 
-.hero img{
+.hero-image{
     width: 50%;
-    border-radius: auto;
+    height: auto;
 }
 
-.hero-cpntent{
+.hero-content{
     flex: 1;
 }
 
@@ -107,7 +107,7 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    display: block;S
+    display: block;
 }
 
 .service-card h3 {
@@ -144,7 +144,7 @@ body {
 .benefits-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24;
+    gap: 24px;
 }
 
 .benefits h2{
@@ -185,7 +185,7 @@ body {
 
 .booking p{
     font-size: 1rem;
-    line height: 1.5;
+    line-height: 1.5;
     margin-bottom: 24px;
 }
 
@@ -214,4 +214,68 @@ body {
     text-align: center;
     margin-top: 24px;
     font-size: 0.8rem;
+}
+
+.services.intro{
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.services-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.services-intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.service-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 5% 60px;
+}
+
+.service-detail {
+    background-color: var(--color-beige);
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .service-grid {
+    grid-template-columns: 1fr;
+    }
+
+.benefits-list {
+    grid-template-columns: 1fr;
+    gap: 28px;
+}
+
+    .hero-content {
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    }
+
+.menu-toggle {
+    display: block;
+}
+.site-nav{
+    display: none;
+}
 }
