@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kontakt | Glansverket Bilvård</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Sidhuvud med logotyp och navigation -->
     <header class="site-header">
         <a class="logo" href="index.html">GLANSVERKET</a>
 
@@ -30,6 +32,7 @@
     </header>
 
     <main>
+        <!-- Rubrik och introduktion till kontaktsidan -->
         <section class="contact-intro">
             <h1>Kontakta oss</h1>
             <p>
@@ -38,7 +41,7 @@
             </p>
         </section>
 
-
+        <!-- Samlar kontaktuppgifter och kontaktformulär -->
         <section class="contact-section">
             <div class="contact-info">
                 <h2>Kontaktuppgifter</h2>
@@ -54,7 +57,8 @@
 
             <div class="contact-form-container">
                 <h2>Skicka en förfrågan</h2>
-
+                 
+                <!-- Formulärets fält och felmeddelanden hanteras med JavaScript -->
                 <form id="contact-form" novalidate>
                     <div class="form-field">
                         <label for="name">Namn</label>
@@ -89,6 +93,7 @@
                     <button class="button" type="submit">
                         Skicka förfrågan
                     </button>
+                    <!-- Visar återkoppling när formuläret kontrolleras -->
                     <p id="form-feedback" aria-live="polite"></p>
 
                 </form>

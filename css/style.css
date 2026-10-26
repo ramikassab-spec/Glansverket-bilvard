@@ -1,3 +1,5 @@
+
+/* Färger som används på webbplatsen */
 :root {
     --color-dark: #17191B;
     --color-light: #F2F0EB;
@@ -17,6 +19,7 @@ body {
     color: var(--color-dark);
 }
 
+/* Sidhuvud och navigation */
 .site-header{
     display: flex;
     align-items: center;
@@ -54,6 +57,7 @@ body {
     cursor: pointer;
 }
 
+/* Startsidan: huvudsektion med text och bild */
 .hero{
     display: flex;
     align-items: center;
@@ -91,6 +95,7 @@ body {
     font-weight: bold;
 }
 
+/* Layout för tjänstekorten och deras innehåll */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -440,6 +445,7 @@ body {
     line-height: 1.6;
 }
 
+/* Anpassningar för mindre skärmar */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -473,6 +479,27 @@ body {
 
     .site-nav {
         display: none;
+    }
+
+    .site-header {
+    position: relative;
+}
+
+.site-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background-color: var(--color-dark);
+    z-index: 10;
+}   
+
+.site-nav a {
+    margin-left: 0;
+    padding: 8px 0;
     }
 
     .about-intro {
