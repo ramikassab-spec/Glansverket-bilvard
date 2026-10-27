@@ -444,6 +444,17 @@ body {
     margin: 0 auto;
     line-height: 1.6;
 }
+/* Utseende för formulärets felmeddelanden */
+#name-error,
+#email-error,
+#service-error,
+#message-error {
+    color: #B42318;
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+
 
 /* Anpassningar för mindre skärmar */
 @media (max-width: 768px) {
