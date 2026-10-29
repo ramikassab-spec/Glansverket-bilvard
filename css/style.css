@@ -7,13 +7,14 @@
     --color-beige: #E6DDCC;
 
 }
-
+/* Gör att padding och kantlinjer räknas in i elementets totala storlek */
 * {
     box-sizing: border-box;
 }
 
+/* Grundinställningar för hela webbplatsen */
 body {
-    margin: 0;
+    margin: 0;  /* Tar bort webbläsarens standardmarginal */
     font-family: Arial, sans-serif;
     background-color: var(--color-light);
     color: var(--color-dark);
@@ -28,7 +29,7 @@ body {
     background-color: var(--color-dark);
     color: var(--color-light);
 }
-
+/* Utseende för webbplatsens logotyp */
 .logo{
     text-decoration:none;
     color: var(--color-gold);
@@ -44,17 +45,20 @@ body {
     margin-left: 20px;
 
 }
+
+/* Ändrar länkens färg när besökaren håller muspekaren över den */
 .site-nav a:hover{
     color: var(--color-gold);
 }
 
+/* Knappen som används för att öppna och stänga mobilmenyn */
 .menu-toggle {
-    display: none;
+    display: none; /* Döljer knappen på större skärmar */
     background: none;
     border: none;
     color: var(--color-light);
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: pointer; /* Visar att knappen går att klicka på */
 }
 
 /* Startsidan: huvudsektion med text och bild */
@@ -70,6 +74,7 @@ body {
     height: auto;
 }
 
+/* Gör att textdelen kan anpassa sig till tillgängligt utrymme */ 
 .hero-content{
     flex: 1;
 }
@@ -86,6 +91,7 @@ body {
     margin-bottom: 24px;
     max-width: 450px;
 
+/* Gemensamt utseende för knappar och länkar med klassen button */
 } .button {
     display: inline-block;
     background-color: var(--color-gold);
@@ -125,6 +131,7 @@ body {
     line-height: 1.5;
 }
 
+/* Utseende för länken i tjänstekortet */
 .service-card a {
     display: inline-block;
     margin-top: 12px;
@@ -146,6 +153,7 @@ body {
     padding: 60px 5%;
 }
 
+/* Placerar fördelarna i tre lika breda kolumner */
 .benefits-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -173,11 +181,12 @@ body {
 .benefit-icon {
     width: 40px;
     height: 40px;
-    object-fit: contain;
+    object-fit: contain; /* Behåller ikonens proportioner */
     margin-bottom: 8px;
     border-radius: 8px;
 }
 
+/* Bokningssektion med uppmaning att kontakta företaget */
 .booking{
     padding: 60px 5%;
     text-align: center;
@@ -194,6 +203,7 @@ body {
     margin-bottom: 24px;
 }
 
+/* Sidfoten: delar upp innehållet i fyra kolumner */
 .site-footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -203,6 +213,7 @@ body {
     color: var(--color-light);
 }
 
+/* Länkarna i sidfoten placeras under varandra */
 .footer-links a {
     display: block;
     color: var(--color-light);
@@ -210,10 +221,12 @@ body {
     margin-bottom: 6px;      
 }
 
+/* Ändrar länkens färg när muspekaren hålls över den */
 .footer-links a:hover {
     color: var(--color-gold);
 }
 
+/* Copyright-texten sträcker sig över hela sidfotens bredd */
 .copyright {
     grid-column: 1 / -1;
     text-align: center;
@@ -221,6 +234,7 @@ body {
     font-size: 0.8rem;
 }
 
+/* Introduktionssektion högst upp på tjänstesidan */
 .services-intro{
     padding: 60px 5%;
     text-align: center;
@@ -238,6 +252,7 @@ body {
     margin: 0 auto;
 }
 
+/* Layout för tjänstekorten på tjänstesidan */
 .service-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -245,6 +260,7 @@ body {
     
 }
 
+/* Utseende och layout för varje tjänstekort */
 .service-detail {
     display: flex;
     flex-direction: column;
@@ -258,6 +274,7 @@ body {
     display: block;
 }
 
+/* Innehållet under bilden i varje tjänstekort */
 .service-detail-content {
     display: flex;
     flex-direction: column;
@@ -272,6 +289,7 @@ body {
     margin-top: 16px;
 }
 
+/* Avstånd runt rubriken i tjänstekortet */
 .service-detail h2 {
     margin-top: 0;
     margin-bottom: 12px;
@@ -302,16 +320,19 @@ body {
     display: block;
 }
 
+/* Innehållet bredvid bilden */
 .about-content {
-    flex: 1;
+    flex: 1; /* Låter texten använda tillgängligt utrymme */
 }
 
+/* Huvudrubriken på Om oss-sidan */
 .about-content h1 {
     font-size: 2.5rem;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
+/* Sektionen som presenterar företagets värderingar */
 .about-values {
     padding: 60px 5%;
 }
@@ -320,6 +341,7 @@ body {
     margin-bottom: 32px;
 }
 
+/* Placerar värderingskorten i tre lika breda kolumner */
 .values-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -336,11 +358,13 @@ body {
     margin-bottom: 12px;
 }
 
+/* Gör texten i värderingskorten mer lättläst */
 .value-card p {
     line-height: 1.5;
     margin-bottom: 0;
 }
 
+/* Sektion på Om oss-sidan som uppmuntrar besökaren att ta kontakt */
 .about-cta {
     padding: 60px 5%;
     text-align: center;
@@ -358,6 +382,7 @@ body {
     margin-bottom: 24px;
 }
 
+/* Introduktionssektion högst upp på kontaktsidan */
 .contact-intro {
     padding: 60px 5%;
     text-align: center;
@@ -386,24 +411,27 @@ body {
     margin-bottom: 20px;
 }
 
+/* Etiketter som beskriver formulärfälten */
 .form-field label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
+/* Gemensam styling för textfält, rullista och meddelandefält */
 .form-field input,
 .form-field select,
 .form-field textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #B8B3A8;
-    border-radius: 4px;
+    padding: 12px; /* Utrymme inuti fälten */
+    border: 1px solid #B8B3A8; /* Tunn kantlinje */
+    border-radius: 4px; /* Rundade hörn */
     font: inherit;
     background-color: var(--color-light);
     color: var(--color-dark);
 }
 
+/* Gemensamt utseende för kontaktinformationen och formuläret */
 .contact-section {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
