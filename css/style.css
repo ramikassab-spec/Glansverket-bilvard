@@ -228,7 +228,7 @@ body {
 
 /* Copyright-texten sträcker sig över hela sidfotens bredd */
 .copyright {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /* Copyright-texten sträcker sig över hela sidfotens bredd */
     text-align: center;
     margin-top: 24px;
     font-size: 0.8rem;
@@ -400,12 +400,7 @@ body {
     margin: 0 auto;
 }
 
-.contact-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    padding: 0 5% 60px;
-}
+
 
 .form-field {
     margin-bottom: 20px;
@@ -519,21 +514,22 @@ body {
     .site-nav {
         display: none;
     }
-
+    /* Gör sidhuvudet till utgångspunkt för mobilmenyn */
     .site-header {
     position: relative;
 }
 
+/* Utseende och placering när mobilmenyn är öppen */
 .site-nav.is-open {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    position: absolute; /* Positionerar menyn i förhållande till sidhuvudet */
+    top: 100%; /* Placerar menyn direkt under sidhuvudet */
+    left: 0; /* Börjar vid sidhuvudets vänstra kant */
+    width: 100%;/* Menyn fyller hela sidhuvudets bredd */
     padding: 20px 5%;
     background-color: var(--color-dark);
-    z-index: 10;
+    z-index: 10; /* Gör att menyn visas ovanpå annat innehåll */
 }   
 
 .site-nav a {
@@ -581,11 +577,13 @@ body {
         gap: 24px;
         padding: 32px 5%;
     }
-
+    
+    /* För att elementen ska kunna krympa inom sina Grid-kolumner och undvika att innehåll trycks utanför */
     .site-footer > * {
         min-width: 0;
     }
 
+    /* För att långa texter och länkar ska kunna brytas så att de inte går utanför skärmen */
     .site-footer p,
     .site-footer a {
         overflow-wrap: anywhere;
