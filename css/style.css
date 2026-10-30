@@ -382,25 +382,6 @@ body {
     margin-bottom: 24px;
 }
 
-/* Introduktionssektion högst upp på kontaktsidan */
-.contact-intro {
-    padding: 60px 5%;
-    text-align: center;
-}
-
-.contact-intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-}
-
-.contact-intro p {
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 650px;
-    margin: 0 auto;
-}
-
-
 
 .form-field {
     margin-bottom: 20px;
@@ -452,6 +433,7 @@ body {
     margin-bottom: 14px;
 }
 
+/* Introduktionssektionen på kontaktsidan */
 .contact-intro {
     padding: 40px 5% 20px;
     text-align: center;
