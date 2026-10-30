@@ -265,6 +265,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--color-beige);
+    padding: 20px;
 }
 
 .service-detail img {
@@ -279,7 +280,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 20px;
+    padding: 0
 
 }
 
@@ -577,7 +578,7 @@ body {
         gap: 24px;
         padding: 32px 5%;
     }
-    
+
     /* För att elementen ska kunna krympa inom sina Grid-kolumner och undvika att innehåll trycks utanför */
     .site-footer > * {
         min-width: 0;
