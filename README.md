@@ -7,7 +7,7 @@ beskriva verksamheten och göra det enkelt för besökare att ta kontakt.
 ## Webbplats
 
 Besök webbplatsen här:
-https://ramikassab-spec.github.io/glansverket-bilvard/
+https://ramikassab-spec.github.io/Glansverket-bilvard/
 
 ## Sidor
 
