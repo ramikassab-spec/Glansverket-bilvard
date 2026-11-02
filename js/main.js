@@ -54,7 +54,7 @@ if (contactForm) {
         isValid = false;
        }
        // Kontrollerar att e-postadressen har rätt format
-       else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+       else if (!/^a@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
        emailError.textContent = "Ange en giltig e-postadress.";
        isValid = false;
        }
